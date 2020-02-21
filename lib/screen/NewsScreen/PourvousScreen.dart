@@ -4,6 +4,7 @@ import 'package:nanews/Widget/widgetcontaineradmin.dart';
 import 'package:nanews/Widget/widgetvideo.dart';
 import 'package:nanews/Widget/wigdetcontainer.dart';
 import 'package:nanews/screen/LectureScreen.dart';
+import 'package:nanews/screen/TopNewsPage.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 class PourvousScreen extends StatefulWidget {
   @override
@@ -118,7 +119,7 @@ class _PourvousScreenState extends State<PourvousScreen> {
                 }),
             ),
             GestureDetector(
-              onTap: ()=>null,
+              onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (_)=>TopNewsScreen())),
                           child: Container(
                 height: height*0.05,
                 child: Center(

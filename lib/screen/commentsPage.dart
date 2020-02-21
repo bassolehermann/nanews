@@ -21,69 +21,14 @@ class _CommentsPageState extends State<CommentsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.white),
         backgroundColor: Color.fromRGBO(133, 137, 240, 1),
-        title:  Container(
-           // margin: EdgeInsets.only(bottom:18),
-            child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                    Container(
-                      height:45,
-                      width: MediaQuery.of(context).size.width/1.6,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(32.0),
-                         color: Colors.white24,
-                      ),
-                      child: TextFormField(
-                        style: TextStyle(
-                             color:Colors.white
-                           ),
-                        maxLines: 5,
-                        textAlign: TextAlign.center,
-                        keyboardType: TextInputType.emailAddress,
-                        autofocus: false,
-                        decoration: InputDecoration(
-                          prefixIcon: Icon(Icons.search, color:Colors.white),
-                          hintText: 'Rechercher',
-                          hintStyle: TextStyle(
-                            color:Colors.white,
-                          ),
-                          contentPadding: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
-                          border:OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
-                          enabledBorder:InputBorder.none
-
-                        ),
-                        ),
-                    ),
-
-                    Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(
-                        shape:BoxShape.circle,
-                        border:Border.all(width: 3, color:Colors.white)
-                      ),
-                      child: Container(
-                        alignment: Alignment.center,
-                        child: Text(
-                          'N',
-                          style:TextStyle(
-                            color:Colors.white,
-                            fontWeight: FontWeight.bold
-                          )
-                        ),
-                      ),
-                    )
-
-                    ],
-                  ),
-          ),
+        title:  Text("Commentaire",style: TextStyle(color:Colors.white),)
       ),
 
       body: GestureDetector(
         onTap: ()=>FocusScope.of(context).requestFocus(new FocusNode()),
               child: Column(
-          
           children: <Widget>[
             Expanded(
               flex: 15,
@@ -97,7 +42,6 @@ class _CommentsPageState extends State<CommentsPage> {
                 itemBuilder: (context, i){
                   return Container(
                     child: Column(
-                      
                       children: <Widget>[
                         Row(
                           children: <Widget>[
@@ -172,24 +116,7 @@ class _CommentsPageState extends State<CommentsPage> {
                               Row(
                                 
                                 children: <Widget>[
-                                  IconButton(
-                                    icon:Icon(
-                                      Icons.message,
-                                      color:Colors.grey,
-                                      ),
-                                      onPressed: (){
-
-                                      },
-                                  ),
-                                  Text(
-                                    'Comment(235)',
-                                    style: TextStyle(
-                                      color:Colors.grey,
-                                      fontWeight: FontWeight.w600,
-                                      fontFamily: 'BAARS',
-                                    ),
-                                  ),
-                                  Spacer(),
+                                
                                   Text(
                                     'Repondre',
                                     style: TextStyle(
@@ -268,23 +195,7 @@ class _CommentsPageState extends State<CommentsPage> {
                               Row(
                                 
                                 children: <Widget>[
-                                  IconButton(
-                                    icon:Icon(
-                                      Icons.message,
-                                      color:Colors.grey,
-                                      ),
-                                      onPressed: (){
-
-                                      },
-                                  ),
-                                  Text(
-                                    'Comment(235)',
-                                    style: TextStyle(
-                                      color:Colors.grey,
-                                      fontWeight: FontWeight.w600,
-                                      fontFamily: 'BAARS',
-                                    ),
-                                  ),
+                                  
                                     Spacer(),
                                    IconButton(
                                     icon:Icon(

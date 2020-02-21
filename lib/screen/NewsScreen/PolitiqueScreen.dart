@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nanews/Widget/widgetcontaineradmin.dart';
+import 'package:nanews/screen/TopNewsPage.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class PolitiqueScreen extends StatefulWidget {
@@ -111,7 +112,7 @@ class _PolitiqueScreenState extends State<PolitiqueScreen> {
                 }),
             ),
             GestureDetector(
-              onTap: ()=>null,
+              onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (_)=>TopNewsScreen())),
                           child: Container(
                 height: height*0.05,
                 child: Center(

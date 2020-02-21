@@ -55,11 +55,11 @@ Widget container(BuildContext context,{int partage,String title,int like,int com
                               Container(
                                 width: MediaQuery.of(context).size.width,
                                 child:Row(children: <Widget>[
-                                  Icon(Icons.favorite_border,color: Colors.grey,),
+                                  Icon(Icons.favorite_border,color: Colors.grey,size: 20,),
                                   Text(" $like  ",style: TextStyle(color:Colors.grey),),
                                 InkWell(
                                   onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (_)=>CommentsPage())),
-                                  child: Icon(Icons.comment,color: Colors.grey,)),
+                                  child: Icon(Icons.comment,color: Colors.grey,size: 20,)),
                                  Text(" $comment  ",style: TextStyle(color:Colors.grey),),
                                 Text(time,style: TextStyle(color:Colors.grey),),
                                 Text("."+site,style: TextStyle(color:Colors.grey),),

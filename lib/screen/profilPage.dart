@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nanews/Widget/widgetdialog.dart';
 
 class ProfilPage extends StatefulWidget {
   @override
@@ -10,6 +11,7 @@ class _ProfilPageState extends State<ProfilPage> {
   void initState() {
     super.initState();
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -229,6 +231,7 @@ class _ProfilPageState extends State<ProfilPage> {
                                     //   Navigator.push(context, MaterialPageRoute(
                                     //     builder: (context)=>HomQQQeFacebook()
                                     // ));
+                                    showlogin(context);
                                   },
                                   child: Container(
                                       child: Text(

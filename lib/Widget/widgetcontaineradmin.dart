@@ -24,7 +24,7 @@ Widget containeradmin(BuildContext context,
               Text(
                 "Cote d'Ivoire : Trilogie du mercredi 12 fevrier 2020",
                 style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.width * 0.045,
+                    fontSize: MediaQuery.of(context).size.width * 0.04,
                     fontWeight: FontWeight.bold),
               ),
               Container(
@@ -34,6 +34,7 @@ Widget containeradmin(BuildContext context,
                       Icon(
                         Icons.favorite_border,
                         color: Colors.grey,
+                        size: 20,
                       ),
                       Text(
                         " $like  ",
@@ -47,6 +48,7 @@ Widget containeradmin(BuildContext context,
                           child: Icon(
                             Icons.comment,
                             color: Colors.grey,
+                            size: 20,
                           )),
                       Text(
                         " $comment  ",

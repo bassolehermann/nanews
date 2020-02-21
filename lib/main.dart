@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nanews/direct.dart';
 import 'package:nanews/screen/DiscussionPage.dart';
 import 'package:nanews/screen/NewsPage.dart';
+import 'package:nanews/screen/UploadPage.dart';
 import 'package:nanews/screen/VideoRadioPage.dart';
 import 'package:nanews/screen/profilPage.dart';
 
@@ -34,7 +35,7 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
 TabController _tabController;
 int _selectedIndex = 0;
 
-List<Widget>tabview=[ News(),VideoRadio(),Container(),Discussions(),ProfilPage()];
+List<Widget>tabview=[ News(),VideoRadio(),UploadPage(),Discussions(),ProfilPage()];
 
   @override
   void initState() {

@@ -81,17 +81,27 @@ Widget video(BuildContext context,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
-            margin: EdgeInsets.only(left: 20),
+            margin: EdgeInsets.only(left: 15),
             child: Row(
               
               children: <Widget>[
                 Icon(
-                  FontAwesomeIcons.thumbsUp,color: Colors.grey,
+                  FontAwesomeIcons.thumbsUp,color: Colors.grey,size: 20,
                 ),
+                SizedBox(
+                width: 5,
+              ),
+                Text("49",style: TextStyle(color: Colors.grey),),
                 SizedBox(
                 width: 10,
               ),
-                Text("49",style: TextStyle(color: Colors.grey),)
+                Icon(
+                  FontAwesomeIcons.thumbsDown,color: Colors.grey,size: 20,
+                ),
+                SizedBox(
+                width: 5,
+              ),
+                Text("9",style: TextStyle(color: Colors.grey),)
               ],
             )
           ),
@@ -104,6 +114,7 @@ Widget video(BuildContext context,
                   child: Icon(
                     Icons.comment,
                     color: Colors.grey,
+                    size: 20,
                   )),
               SizedBox(
                 width: 10,
@@ -115,12 +126,13 @@ Widget video(BuildContext context,
             ],
           )),
           Container(
-              margin: EdgeInsets.only(right: 20),
+              margin: EdgeInsets.only(right: 15),
               child: Row(
                 children: <Widget>[
                   Icon(
                     Icons.share,
                     color: Colors.grey,
+                    size: 20,
                   ),
                   SizedBox(
                     width: 10,
